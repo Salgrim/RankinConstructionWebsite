@@ -4,18 +4,4 @@
   margin: 0;
   padding: 0;
 }
-
-body {
-  background: #f8f9fa;
-  color: #000000;
-}
-
-.main {
-  width: 80%;
-  margin: 0 auto;
-}
-
-.main .main__paragraph {
-  font-weight: 400;
-}
 /*# sourceMappingURL=main.css.map */
