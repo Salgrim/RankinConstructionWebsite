@@ -1,13 +1,13 @@
 @import 'config';
 @import 'home';
-
+@import 'menu';
 
 body {
     background: $primary-color;
-    color: $text-main-color;
+    color: set-text-color($primary-color);
     height: 100vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 2;
+    line-height: 1.2;
 }
 
 h1, h2, h3 {
@@ -15,7 +15,7 @@ h1, h2, h3 {
 }
 
 a {
-    color: $text-main-color;
+    color: set-text-color($primary-color);
     text-decoration: none;
 }
 
@@ -40,28 +40,29 @@ img {
 .blue-info {
     padding: 24px 0;
     background: $accent-color;
-    color: $text-secondary-color;
+    color: set-text-color($accent-color);
     text-align: center;
 
-    #{&}__title {
+    &__title {
         line-height: 1.2em;
         letter-spacing: 1px;
         margin: 0px 24px 24px 24px;
+        text-transform: uppercase;
     }
 
-    #{&}__line-break {
-        background: $text-secondary-color;
+    &__line-break {
+        background: set-text-color($accent-color);
         height: 1px;
         margin: 0px 24px 24px 24px;
     }
 
-    #{&}__body {
+    &__body {
         margin: 24px 24px 0px 24px;
     }
 }
 
 .line-break {
-    background: $text-main-color;
+    background: set-text-color($primary-color);
     height: 1px;
     margin: 0 24px 24px 24px;
     max-width: 100%;
@@ -73,15 +74,29 @@ img {
     bottom: .4rem;
     padding: 1rem;
 
-    #{&}__text {
+    &__text {
         text-align: center;
         font-size: 0.9em;
         margin: 0 auto;
     }
 
-    #{&}__text--sm {
+    &__text--sm {
         text-align: center;
         font-size: .8em;
         margin: 0 auto;
     }
+}
+
+.test {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    font-size: 1rem;
+    position: fixed;
+    bottom: 0.4rem;
+    text-align: center;
+    padding: 1rem;
+    color: set-text-color($primary-color);
 }

@@ -1,11 +1,21 @@
 $primary-color: #f8f9fa;
 $accent-color: #006fa0;
-$text-main-color: #363946;
-$text-secondary-color: #f8f9fa;
 
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+@mixin transition-ease {
+    transition: all 0.5s ease-in-out;
+}
+
+@function set-text-color($color) {
+    @if (lightness($color) > 40%) {
+        @return #363946;
+    }   @else {
+        @return #f8f9fa;
+    }
 }
