@@ -69,20 +69,20 @@ img {
 }
 
 .copyright {
-    width: 100%;
+    width: 100vw;
     position: fixed;
     bottom: .4rem;
     padding: 1rem;
 
     &__text {
         text-align: center;
-        font-size: 0.9em;
+        font-size: 14px;
         margin: 0 auto;
     }
 
     &__text--sm {
         text-align: center;
-        font-size: .8em;
+        font-size: 12px;
         margin: 0 auto;
     }
 }
@@ -93,10 +93,8 @@ img {
 }
 
 footer {
-    font-size: 1rem;
-    position: fixed;
+    position: relative;
     bottom: 0.4rem;
-    text-align: center;
     padding: 1rem;
     color: set-text-color($primary-color);
 }
