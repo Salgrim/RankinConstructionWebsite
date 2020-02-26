@@ -54,7 +54,14 @@
     }
 }
 
-.nav {
+.logo {
+    background-color: $primary-color;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+nav {
     position: fixed;
     top: 0;
     left: 0;
@@ -114,6 +121,12 @@
             }
         }
     }
+}
+
+.nav-bar {
+    height: 95px;
+    width: 100vw;
+    background-color: $primary-color;
 }
 
 @for $i from 1 through 5 {

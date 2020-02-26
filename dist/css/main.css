@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -7,13 +8,17 @@
 
 .home {
   height: 100%;
-  padding-top: 10vh;
-  overflow: hidden;
+  padding-top: 14vh;
+  padding-bottom: 1rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
   background-size: cover;
+}
+
+.home__img {
+  width: 100vw;
 }
 
 .menu-btn {
@@ -78,7 +83,14 @@
           transform: rotate(-45deg) translate(3px, -7px);
 }
 
-.nav {
+.logo {
+  background-color: #f8f9fa;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+nav {
   position: fixed;
   top: 0;
   left: 0;
@@ -87,11 +99,11 @@
   visibility: hidden;
 }
 
-.nav.open {
+nav.open {
   visibility: visible;
 }
 
-.nav .menu-nav {
+nav .menu-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -116,29 +128,29 @@
   transition: all 0.5s ease-in-out;
 }
 
-.nav .menu-nav.open {
+nav .menu-nav.open {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
 
-.nav .menu-nav__item {
+nav .menu-nav__item {
   -webkit-transform: translateX(100vw);
           transform: translateX(100vw);
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
-.nav .menu-nav__item.open {
+nav .menu-nav__item.open {
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
 
-.nav .menu-nav__item.active a {
+nav .menu-nav__item.active a {
   color: #006fa0;
   font-weight: 700;
 }
 
-.nav .menu-nav__link {
+nav .menu-nav__link {
   display: inline-block;
   font-size: 2rem;
   text-transform: uppercase;
@@ -148,12 +160,18 @@
   transition: all 0.5s ease-in-out;
 }
 
-.nav .menu-nav__link:hover {
+nav .menu-nav__link:hover {
   color: #006fa0;
 }
 
-.nav .menu-nav__link:focus {
+nav .menu-nav__link:focus {
   color: #006fa0;
+}
+
+.nav-bar {
+  height: 95px;
+  width: 100vw;
+  background-color: #f8f9fa;
 }
 
 .menu-nav__item:nth-child(1) {
@@ -181,12 +199,173 @@
           transition-delay: 0.65s;
 }
 
+.info-blob {
+  margin-top: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 1rem;
+}
+
+.info-blob__img {
+  border-radius: 6px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-shadow: 0px 5px 5px #c2bdbd;
+          box-shadow: 0px 5px 5px #c2bdbd;
+  width: 90%;
+}
+
+.info-blob__title {
+  text-transform: capitalize;
+  text-align: start;
+  margin: 2rem 1rem 0 1rem;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  padding-bottom: 16px;
+}
+
+.info-blob__info {
+  text-align: start;
+  margin: 1.5rem;
+  line-height: 1.5rem;
+  padding-top: 1rem;
+}
+
+.info-blob__points {
+  text-align: start;
+  padding-left: 4rem;
+  line-height: 1.5rem;
+}
+
+.blue-info {
+  padding: 24px 0;
+  background: #006fa0;
+  color: #f8f9fa;
+  text-align: center;
+}
+
+.blue-info__title {
+  color: #f8f9fa;
+  line-height: 2rem;
+  letter-spacing: 1px;
+  margin: 0px 24px 24px 24px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.blue-info__line-break {
+  background: #f8f9fa;
+  height: 1px;
+  margin: 0px 24px 24px 24px;
+}
+
+.blue-info__body {
+  margin: 24px 24px 0px 24px;
+  line-height: 1.5rem;
+}
+
+.quote {
+  background-color: #e9ecef;
+  margin: 2rem 1.5rem;
+  padding: .5rem;
+  border-radius: 16px;
+  border-color: #006fa0;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.quote p {
+  text-align: start;
+  margin: 1.5rem;
+  line-height: 1.5rem;
+}
+
+.quote p::before {
+  content: "“ ";
+  font-size: 1.5rem;
+}
+
+.quote p::after {
+  content: " ”";
+  font-size: 1.5rem;
+}
+
+.quote h3 {
+  margin: 1rem 1.5rem;
+  text-transform: capitalize;
+  text-align: start;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+}
+
+.quote h3::before {
+  content: '-';
+}
+
+.contact {
+  height: 100%;
+  padding-top: 14vh;
+  padding-bottom: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-size: cover;
+}
+
+.contact__phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 700;
+  margin: 1rem;
+  font-size: large;
+}
+
+.contact__phone::before {
+  content: "Phone:";
+  margin-right: 0.5rem;
+}
+
+.contact__fax {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 700;
+  margin: 1rem;
+}
+
+.contact__fax::before {
+  content: "Fax:";
+  margin-right: 0.5rem;
+}
+
+.contact__email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 600;
+  margin: 1rem auto;
+}
+
 body {
   background: #f8f9fa;
   color: #363946;
   height: 100vh;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.2;
+  overflow-y: scroll;
 }
 
 h1, h2, h3 {
@@ -210,47 +389,17 @@ main {
   width: 100%;
 }
 
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.blue-info {
-  padding: 24px 0;
-  background: #006fa0;
-  color: #f8f9fa;
-  text-align: center;
-}
-
-.blue-info__title {
-  line-height: 1.2em;
-  letter-spacing: 1px;
-  margin: 0px 24px 24px 24px;
-  text-transform: uppercase;
-}
-
-.blue-info__line-break {
-  background: #f8f9fa;
-  height: 1px;
-  margin: 0px 24px 24px 24px;
-}
-
-.blue-info__body {
-  margin: 24px 24px 0px 24px;
-}
-
 .line-break {
   background: #363946;
   height: 1px;
-  margin: 0 24px 24px 24px;
+  margin: 24px;
   max-width: 100%;
 }
 
 .copyright {
+  position: relative;
   width: 100vw;
-  position: fixed;
-  bottom: .4rem;
+  bottom: 0;
   padding: 1rem;
 }
 
@@ -276,5 +425,34 @@ footer {
   bottom: 0.4rem;
   padding: 1rem;
   color: #363946;
+}
+
+.tag h1 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  text-align: start;
+  letter-spacing: .3rem;
+  line-height: 2.5rem;
+  padding: 0 2rem 2rem 2rem;
+}
+
+.tag h2 {
+  background-color: black;
+  margin: 2rem 1rem;
+  padding: 1rem;
+  color: #f8f9fa;
+  text-transform: uppercase;
+  text-align: start;
+  letter-spacing: .1rem;
+}
+
+.tag__center h2 {
+  background-color: black;
+  margin: 2rem 20%;
+  padding: .5rem;
+  color: #f8f9fa;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: .1rem;
 }
 /*# sourceMappingURL=main.css.map */

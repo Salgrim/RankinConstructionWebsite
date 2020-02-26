@@ -1,0 +1,40 @@
+.contact {
+  height: 100%;
+  padding-top: 14vh;
+  padding-bottom: 1rem;
+  align-items: center;
+  text-align: center;
+  background-size: cover;
+
+  &__phone {
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    margin: 1rem;
+    font-size: large;
+
+    &::before {
+      content: "Phone:";
+      margin-right: 0.5rem;
+    }
+  }
+
+  &__fax {
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    margin: 1rem;
+
+    &::before {
+      content: "Fax:";
+      margin-right: 0.5rem;
+    }
+  }
+
+  &__email {
+      display: flex;
+      justify-content: center;
+      font-weight: 600;
+      margin: 1rem auto;
+  }
+}

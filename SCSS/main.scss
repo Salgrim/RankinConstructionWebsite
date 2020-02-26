@@ -1,6 +1,9 @@
 @import 'config';
 @import 'home';
 @import 'menu';
+@import 'infoblob';
+@import 'quote';
+@import 'contact';
 
 body {
     background: $primary-color;
@@ -8,6 +11,7 @@ body {
     height: 100vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.2;
+    overflow-y: scroll;
 }
 
 h1, h2, h3 {
@@ -31,47 +35,17 @@ main {
     width: 100%;
 }
 
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.blue-info {
-    padding: 24px 0;
-    background: $accent-color;
-    color: set-text-color($accent-color);
-    text-align: center;
-
-    &__title {
-        line-height: 1.2em;
-        letter-spacing: 1px;
-        margin: 0px 24px 24px 24px;
-        text-transform: uppercase;
-    }
-
-    &__line-break {
-        background: set-text-color($accent-color);
-        height: 1px;
-        margin: 0px 24px 24px 24px;
-    }
-
-    &__body {
-        margin: 24px 24px 0px 24px;
-    }
-}
-
 .line-break {
     background: set-text-color($primary-color);
     height: 1px;
-    margin: 0 24px 24px 24px;
+    margin: 24px;
     max-width: 100%;
 }
 
 .copyright {
+    position: relative; 
     width: 100vw;
-    position: fixed;
-    bottom: .4rem;
+    bottom: 0;
     padding: 1rem;
 
     &__text {
@@ -97,4 +71,38 @@ footer {
     bottom: 0.4rem;
     padding: 1rem;
     color: set-text-color($primary-color);
+}
+
+.tag {
+
+    h1{
+        text-transform: uppercase;
+        font-size: 2rem;
+        text-align: start;
+        letter-spacing: .3rem;
+        line-height: 2.5rem;
+        padding: 0 2rem 2rem 2rem;
+    }
+
+    h2 {
+        background-color: black;
+        margin: 2rem 1rem;
+        padding: 1rem;
+        color: $primary-color;
+        text-transform: uppercase;
+        text-align: start;
+        letter-spacing: .1rem;
+    }
+    
+    &__center{
+        h2 {
+            background-color: black;
+            margin: 2rem 20%;
+            padding: .5rem;
+            color: $primary-color;
+            text-transform: uppercase;
+            text-align: center;
+            letter-spacing: .1rem;
+        }
+    }
 }

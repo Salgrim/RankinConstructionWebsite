@@ -1,8 +1,13 @@
 .home {
     height: 100%;
-    padding-top: 10vh;
-    overflow: hidden;
+    padding-top: 14vh;
+    padding-bottom: 1rem;
     align-items: center;
     text-align: center;
     background-size: cover;
+
+    &__img {
+        width: 100vw;
+    }
 }
+
