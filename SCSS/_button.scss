@@ -1,0 +1,32 @@
+.button-blue {
+    user-select: none;
+    cursor: pointer;
+    overflow: hidden;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 1rem;
+    border-style: solid;
+    border-width: 3px;
+    border-color: darken($color: $accent-color, $amount: 5);
+    box-shadow: 0 9px 2px darken($color: $primary-color, $amount: 30);
+    margin: 1rem;
+    display: inline-block;
+    position: relative;
+    background-color: $accent-color;
+    color: set-text-color($accent-color);
+    font-size: 1.2rem;
+    padding: .75rem 2rem;
+
+    &:hover {
+        background-color: darken($color: $accent-color, $amount: 10);
+        border-color: lighten($color: $accent-color, $amount: 10);
+    }
+
+    &:active {
+        background-color: darken($color: $accent-color, $amount: 10);
+        box-shadow: 0 5px 1px darken($color: $primary-color, $amount: 45);
+        transform: translateY(4px);
+    }
+}
+

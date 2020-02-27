@@ -380,6 +380,44 @@ nav .menu-nav__link:focus {
   text-align: center;
 }
 
+.button-blue {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  overflow: hidden;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 1rem;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #005d87;
+  -webkit-box-shadow: 0 9px 2px #9fadba;
+          box-shadow: 0 9px 2px #9fadba;
+  margin: 1rem;
+  display: inline-block;
+  position: relative;
+  background-color: #006fa0;
+  color: #f8f9fa;
+  font-size: 1.2rem;
+  padding: .75rem 2rem;
+}
+
+.button-blue:hover {
+  background-color: #004c6d;
+  border-color: #0092d3;
+}
+
+.button-blue:active {
+  background-color: #004c6d;
+  -webkit-box-shadow: 0 5px 1px #72869a;
+          box-shadow: 0 5px 1px #72869a;
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+}
+
 body {
   background: #f8f9fa;
   color: #363946;
