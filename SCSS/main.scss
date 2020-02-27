@@ -1,108 +1,112 @@
-@import 'config';
-@import 'home';
-@import 'menu';
-@import 'infoblob';
-@import 'quote';
-@import 'contact';
+@import "config";
+@import "home";
+@import "menu";
+@import "infoblob";
+@import "quote";
+@import "contact";
+@import "about";
 
 body {
-    background: $primary-color;
-    color: set-text-color($primary-color);
-    height: 100vh;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.2;
-    overflow-y: scroll;
+  background: $primary-color;
+  color: set-text-color($primary-color);
+  height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.2;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
-h1, h2, h3 {
-    font-weight: 500;
+h1,
+h2,
+h3 {
+  font-weight: 500;
 }
 
 a {
-    color: set-text-color($primary-color);
-    text-decoration: none;
+  color: set-text-color($primary-color);
+  text-decoration: none;
 }
 
 header {
-    position: fixed;
-    z-index: 2;
-    width: 100%;
-    padding: 1rem;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  padding: 1rem;
 }
 
 main {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 .line-break {
-    background: set-text-color($primary-color);
-    height: 1px;
-    margin: 24px;
-    max-width: 100%;
+  background: set-text-color($primary-color);
+  height: 1px;
+  margin: 1.5rem;
+  max-width: 100%;
 }
 
 .copyright {
-    position: relative; 
-    width: 100vw;
-    bottom: 0;
-    padding: 1rem;
+  position: relative;
+  width: 100vw;
+  bottom: 0;
 
-    &__text {
-        text-align: center;
-        font-size: 14px;
-        margin: 0 auto;
-    }
+  &__text {
+    text-align: center;
+    font-size: 14px;
+    margin: 0;
+  }
 
-    &__text--sm {
-        text-align: center;
-        font-size: 12px;
-        margin: 0 auto;
-    }
+  &__text--sm {
+    text-align: center;
+    font-size: 12px;
+    margin: 0;
+  }
 }
 
 .test {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 footer {
-    position: relative;
-    bottom: 0.4rem;
-    padding: 1rem;
-    color: set-text-color($primary-color);
+  position: relative;
+  bottom: 0.4rem;
+  padding-bottom: 1rem;
+  color: set-text-color($primary-color);
 }
 
 .tag {
+  padding: 0 2rem 2rem 2rem;
 
-    h1{
-        text-transform: uppercase;
-        font-size: 2rem;
-        text-align: start;
-        letter-spacing: .3rem;
-        line-height: 2.5rem;
-        padding: 0 2rem 2rem 2rem;
-    }
+  h1 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-align: start;
+    letter-spacing: 0.3rem;
+    line-height: 2.5rem;
+  }
 
+  h2 {
+    display: inline-block;
+    background-color: black;
+    margin: 2rem 0;
+    padding: 1rem;
+    color: $primary-color;
+    text-transform: uppercase;
+    text-align: start;
+    letter-spacing: 0.1rem;
+  }
+
+  &__center {
     h2 {
-        background-color: black;
-        margin: 2rem 1rem;
-        padding: 1rem;
-        color: $primary-color;
-        text-transform: uppercase;
-        text-align: start;
-        letter-spacing: .1rem;
+      background-color: black;
+      margin: 2rem 20%;
+      padding: 0.5rem;
+      color: $primary-color;
+      text-transform: uppercase;
+      text-align: center;
+      letter-spacing: 0.1rem;
     }
-    
-    &__center{
-        h2 {
-            background-color: black;
-            margin: 2rem 20%;
-            padding: .5rem;
-            color: $primary-color;
-            text-transform: uppercase;
-            text-align: center;
-            letter-spacing: .1rem;
-        }
-    }
+  }
 }

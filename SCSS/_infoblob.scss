@@ -1,63 +1,67 @@
 .info-blob {
-    margin-top: 2rem;
-    justify-content: center;
-    padding-bottom: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 1rem;
+  justify-content: center;
 
-    &__img {
-        border-radius: 6px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        box-shadow: 0px 5px 5px rgb(194, 189, 189);
-        width: 90%;
-    }
+  &__img {
+    border-radius: .5rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 4px 10px rgb(194, 189, 189);
+    width: 90vw;
+  }
 
-    &__title {
-        text-transform: capitalize;
-        text-align: start;
-        margin: 2rem 1rem 0 1rem;
-        border-bottom-style: solid;
-        border-bottom-width: 1px;
-        padding-bottom: 16px;
-    }
+  &__title {
+    text-transform: capitalize;
+    text-align: start;
+    margin: 2rem auto 0 1rem;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    padding-bottom: 12px;
+    border-color: $accent-color;
+  }
 
-    &__info {
-        text-align: start;
-        margin: 1.5rem;
-        line-height: 1.5rem;
-        padding-top: 1rem;
-    }
+  &__info {
+    text-align: start;
+    margin: 1rem 1rem 0 1rem;
+    line-height: 1.5rem;
+  }
 
-    &__points {
-        text-align: start;
-        padding-left: 4rem;
-        line-height: 1.5rem;
-    }
+  &__points {
+    text-align: start;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 4rem;
+    line-height: 1.5rem;
+  }
 }
 
 .blue-info {
-    padding: 24px 0;
-    background: $accent-color;
-    color: set-text-color($accent-color);
-    text-align: center;
+  padding: 24px 0;
+  background: $accent-color;
+  color: set-text-color($accent-color);
+  text-align: center;
+  margin-bottom: 1rem;
 
-    &__title {
-        color: $primary-color;
-        line-height: 2rem;
-        letter-spacing: 1px;
-        margin: 0px 24px 24px 24px;
-        text-transform: uppercase;
-        font-weight: 600;
-    }
+  &__title {
+    color: $primary-color;
+    line-height: 2rem;
+    letter-spacing: 1px;
+    margin: 0px 24px 24px 24px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
 
-    &__line-break {
-        background: set-text-color($accent-color);
-        height: 1px;
-        margin: 0px 24px 24px 24px;
-    }
+  &__line-break {
+    background: set-text-color($accent-color);
+    height: 1px;
+    margin: 0px 24px 24px 24px;
+  }
 
-    &__body {
-        margin: 24px 24px 0px 24px;
-        line-height: 1.5rem;
-    }
+  &__body {
+    margin: 24px 24px 0px 24px;
+    line-height: 1.5rem;
+  }
 }

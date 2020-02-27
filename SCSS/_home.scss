@@ -1,13 +1,12 @@
 .home {
-    height: 100%;
-    padding-top: 14vh;
-    padding-bottom: 1rem;
-    align-items: center;
-    text-align: center;
-    background-size: cover;
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 100vh;
+  padding-top: 14vh;
+  align-items: center;
+  text-align: center;
 
-    &__img {
-        width: 100vw;
-    }
+  &__img {
+    width: 100%;
+  }
 }
-

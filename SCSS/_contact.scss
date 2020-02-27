@@ -1,5 +1,7 @@
 .contact {
-  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 100vh;
   padding-top: 14vh;
   padding-bottom: 1rem;
   align-items: center;
@@ -7,7 +9,6 @@
   background-size: cover;
 
   &__phone {
-    display: flex;
     justify-content: center;
     font-weight: 700;
     margin: 1rem;
@@ -20,7 +21,6 @@
   }
 
   &__fax {
-    display: flex;
     justify-content: center;
     font-weight: 700;
     margin: 1rem;
@@ -32,9 +32,8 @@
   }
 
   &__email {
-      display: flex;
-      justify-content: center;
-      font-weight: 600;
-      margin: 1rem auto;
+    justify-content: center;
+    font-weight: 600;
+    margin: 1rem auto;
   }
 }
