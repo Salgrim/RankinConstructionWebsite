@@ -30,3 +30,37 @@
     }
 }
 
+.button-white {
+    user-select: none;
+    cursor: pointer;
+    overflow: hidden;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: .5rem;
+    border-style: solid;
+    border-width: 3px;
+    border-color: darken($color: $primary-color, $amount: 60);
+    box-shadow: 0 9px 2px darken($color: $accent-color, $amount: 10);
+    margin: 1rem auto;
+    display: inline-block;
+    position: relative;
+    background-color: $primary-color;
+    color: set-text-color($primary-color);
+    font-size: 1.2rem;
+    font-weight: 550;
+    padding: .75rem 1.5rem;
+
+    &:hover {
+        background-color: darken($color: $primary-color, $amount: 10);
+        border-color: lighten($color: $primary-color, $amount: 10);
+    }
+
+    &:active {
+        color: set-text-color($accent-color);
+        background-color: darken($color: $primary-color, $amount: 60);
+        box-shadow: 0 5px 1px darken($color: $accent-color, $amount: 20);
+        transform: translateY(4px);
+    }
+}
+

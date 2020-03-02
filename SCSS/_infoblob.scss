@@ -1,7 +1,7 @@
 .info-blob {
   display: grid;
   grid-template-columns: 1fr;
-  margin-top: 1rem;
+  margin-top: 2rem;
   justify-content: center;
 
   &__img {
@@ -39,17 +39,18 @@
 }
 
 .blue-info {
-  padding: 24px 0;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  padding: 2rem 0;
   background: $accent-color;
   color: set-text-color($accent-color);
   text-align: center;
-  margin-bottom: 1rem;
 
   &__title {
     color: $primary-color;
     line-height: 2rem;
     letter-spacing: 1px;
-    margin: 0px 24px 24px 24px;
+    margin: 1.5rem;
     text-transform: uppercase;
     font-weight: 600;
   }
@@ -57,11 +58,72 @@
   &__line-break {
     background: set-text-color($accent-color);
     height: 1px;
-    margin: 0px 24px 24px 24px;
+    margin: 1.5rem;
   }
 
   &__body {
-    margin: 24px 24px 0px 24px;
+    margin: 1.5rem;
     line-height: 1.5rem;
+  }
+
+  &__button{
+    margin: 3rem 1rem;
+  }
+}
+
+.tag {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 2rem 2rem 0 2rem;
+  justify-content: center;
+
+  &-main {
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-align: start;
+    letter-spacing: 0.3rem;
+    line-height: 2.5rem;
+  }
+
+  &__info {
+    text-align: start;
+    margin: 1rem 1rem 0 1rem;
+    line-height: 1.5rem;
+  }
+
+  &__black {
+    display: inline-block;
+    background-color: black;
+    margin: 2rem 0;
+    padding: 1rem;
+    color: $primary-color;
+    text-transform: uppercase;
+    text-align: start;
+    letter-spacing: 0.1rem;
+  }
+
+  &__center-black {
+    display: inline-block;
+    background-color: black;
+    position: relative;
+    margin: 2rem auto;
+    padding: 0.5rem 1.5rem;
+    color: set-text-color(black);
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.4rem;
+}
+
+
+  &__center-white {
+      display: inline-block;
+      background-color: $primary-color;
+      position: relative;
+      margin: 2rem;
+      padding: .5rem 2rem;
+      color: set-text-color($primary-color);
+      text-transform: uppercase;
+      text-align: center;
+      letter-spacing: 0.4rem;
   }
 }

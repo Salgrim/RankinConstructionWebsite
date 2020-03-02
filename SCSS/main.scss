@@ -6,6 +6,7 @@
 @import "contact";
 @import "about";
 @import "button";
+@import "testimonials";
 
 body {
   background: $primary-color;
@@ -77,37 +78,4 @@ footer {
   color: set-text-color($primary-color);
 }
 
-.tag {
-  padding: 0 2rem 2rem 2rem;
 
-  h1 {
-    text-transform: uppercase;
-    font-size: 2rem;
-    text-align: start;
-    letter-spacing: 0.3rem;
-    line-height: 2.5rem;
-  }
-
-  h2 {
-    display: inline-block;
-    background-color: black;
-    margin: 2rem 0;
-    padding: 1rem;
-    color: $primary-color;
-    text-transform: uppercase;
-    text-align: start;
-    letter-spacing: 0.1rem;
-  }
-
-  &__center {
-    h2 {
-      background-color: black;
-      margin: 2rem 20%;
-      padding: 0.5rem;
-      color: $primary-color;
-      text-transform: uppercase;
-      text-align: center;
-      letter-spacing: 0.1rem;
-    }
-  }
-}

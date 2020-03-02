@@ -211,7 +211,7 @@ nav .menu-nav__link:focus {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  margin-top: 1rem;
+  margin-top: 2rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -252,18 +252,19 @@ nav .menu-nav__link:focus {
 }
 
 .blue-info {
-  padding: 24px 0;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  padding: 2rem 0;
   background: #006fa0;
   color: #f8f9fa;
   text-align: center;
-  margin-bottom: 1rem;
 }
 
 .blue-info__title {
   color: #f8f9fa;
   line-height: 2rem;
   letter-spacing: 1px;
-  margin: 0px 24px 24px 24px;
+  margin: 1.5rem;
   text-transform: uppercase;
   font-weight: 600;
 }
@@ -271,12 +272,76 @@ nav .menu-nav__link:focus {
 .blue-info__line-break {
   background: #f8f9fa;
   height: 1px;
-  margin: 0px 24px 24px 24px;
+  margin: 1.5rem;
 }
 
 .blue-info__body {
-  margin: 24px 24px 0px 24px;
+  margin: 1.5rem;
   line-height: 1.5rem;
+}
+
+.blue-info__button {
+  margin: 3rem 1rem;
+}
+
+.tag {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  margin: 2rem 2rem 0 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tag-main {
+  text-transform: uppercase;
+  font-size: 2rem;
+  text-align: start;
+  letter-spacing: 0.3rem;
+  line-height: 2.5rem;
+}
+
+.tag__info {
+  text-align: start;
+  margin: 1rem 1rem 0 1rem;
+  line-height: 1.5rem;
+}
+
+.tag__black {
+  display: inline-block;
+  background-color: black;
+  margin: 2rem 0;
+  padding: 1rem;
+  color: #f8f9fa;
+  text-transform: uppercase;
+  text-align: start;
+  letter-spacing: 0.1rem;
+}
+
+.tag__center-black {
+  display: inline-block;
+  background-color: black;
+  position: relative;
+  margin: 2rem auto;
+  padding: 0.5rem 1.5rem;
+  color: #f8f9fa;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.4rem;
+}
+
+.tag__center-white {
+  display: inline-block;
+  background-color: #f8f9fa;
+  position: relative;
+  margin: 2rem;
+  padding: .5rem 2rem;
+  color: #363946;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.4rem;
 }
 
 .quote {
@@ -418,6 +483,59 @@ nav .menu-nav__link:focus {
           transform: translateY(4px);
 }
 
+.button-white {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  overflow: hidden;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: .5rem;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #506070;
+  -webkit-box-shadow: 0 9px 2px #004c6d;
+          box-shadow: 0 9px 2px #004c6d;
+  margin: 1rem auto;
+  display: inline-block;
+  position: relative;
+  background-color: #f8f9fa;
+  color: #363946;
+  font-size: 1.2rem;
+  font-weight: 550;
+  padding: .75rem 1.5rem;
+}
+
+.button-white:hover {
+  background-color: #dae0e5;
+  border-color: white;
+}
+
+.button-white:active {
+  color: #f8f9fa;
+  background-color: #506070;
+  -webkit-box-shadow: 0 5px 1px #00283a;
+          box-shadow: 0 5px 1px #00283a;
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+}
+
+.testimonials {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  height: 100vh;
+  padding-top: 14vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
 body {
   background: #f8f9fa;
   color: #363946;
@@ -486,38 +604,5 @@ footer {
   bottom: 0.4rem;
   padding-bottom: 1rem;
   color: #363946;
-}
-
-.tag {
-  padding: 0 2rem 2rem 2rem;
-}
-
-.tag h1 {
-  text-transform: uppercase;
-  font-size: 2rem;
-  text-align: start;
-  letter-spacing: 0.3rem;
-  line-height: 2.5rem;
-}
-
-.tag h2 {
-  display: inline-block;
-  background-color: black;
-  margin: 2rem 0;
-  padding: 1rem;
-  color: #f8f9fa;
-  text-transform: uppercase;
-  text-align: start;
-  letter-spacing: 0.1rem;
-}
-
-.tag__center h2 {
-  background-color: black;
-  margin: 2rem 20%;
-  padding: 0.5rem;
-  color: #f8f9fa;
-  text-transform: uppercase;
-  text-align: center;
-  letter-spacing: 0.1rem;
 }
 /*# sourceMappingURL=main.css.map */
