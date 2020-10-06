@@ -1,0 +1,10 @@
+{
+  "editor.wordWrap": "on",
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "/dist/css"
+    }
+  ]
+}

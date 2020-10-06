@@ -8,32 +8,37 @@
   text-align: center;
   background-size: cover;
 
+  &-info {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0;
+    margin: 0;
+  }
+
   &__phone {
     justify-content: center;
     font-weight: 700;
     margin: 1rem;
-    font-size: large;
-
-    &::before {
-      content: "Phone:";
-      margin-right: 0.5rem;
-    }
+    font-size: 1.5rem;
   }
 
   &__fax {
     justify-content: center;
     font-weight: 700;
-    margin: 1rem;
-
-    &::before {
-      content: "Fax:";
-      margin-right: 0.5rem;
-    }
+    margin: .5rem;
   }
 
   &__email {
     justify-content: center;
     font-weight: 600;
-    margin: 1rem auto;
+    margin: .5rem;
   }
+
+  &__small-text {
+    margin: 0;
+    margin-top: 1rem;
+    padding: 0;
+    font-weight: 600;
+  }
+
 }
